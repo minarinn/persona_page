@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/b49zcbz5byw.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container > * {
+    flex-basis: 33.33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: lightblue;
+    color: blue;
+    border: 2px dashed blue;
+    font-size: 10rem;
+    text-align: center;
+}
