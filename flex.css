@@ -1,31 +1,48 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+ margin: 0;
+ box-sizing: border-box;
 }
-
 body {
-    background: url("https://cdn.imgchest.com/files/b49zcbz5byw.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    opacity: 0.5;
+background: url("https://cdn.imgchest.com/files/b49zcbz5byw.png"); /* replace yellow image web address FuMing emails you */
+opacity: .5;
+background-repeat: no-repeat;
+
+
+}
+.container {
+max-width: 1400px;
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
 }
 
-.container {
-    max-width: 1400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 .container > * {
-    flex-basis: 33.33%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    background-color: lightblue;
-    color: blue;
-    border: 2px dashed blue;
-    font-size: 10rem;
-    text-align: center;
+background-color: lightblue;
+font-size: 10rem;
+height: 200px;
+ color: blue;
+ border: 2px dashed blue;
+ display: flex; 
+ flex-grow: 1;
+}
+
+
+.box1 {
+    flex-basis: 100%;
+}
+.box2{
+    flex-basis: 46.9%;
+}
+.box3{
+    flex-basis: 25.4%;
+}
+.box4{
+     flex-basis: 25.4%;
+}
+.box5{
+    flex-basis: 49.4%;
+}
+.box6{
+    flex-basis: 49.4%;
 }
