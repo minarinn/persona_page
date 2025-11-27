@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1242px;
+  min-height: 1583px;
+  font-size: 2rem;
+  opacity: 0.5;
+  color: blue;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: minmax(38px, auto) minmax(105px, auto) minmax(95px, auto) minmax(310px, auto) minmax(45px, auto) minmax(315px, auto);
+  grid-template-columns: minmax(20px, 225px) minmax(20px, 657px) minmax(20px, 360px);
+  grid-template-areas:
+    'one  one    seven'
+    'two  eight nine'
+    'three three three'
+    'four  four  four'
+    'five  five  five'
+    'six   six   six';
+}
+
+.container > * {
+  border: 2px dashed blue;
+}
+
+.box1 {
+  grid-area: one;
+}
+
+.box2 {
+  grid-area: two;
+}
+
+.box3 {
+  grid-area: three;
+}
+
+.box4 {
+  grid-area: four;
+}
+
+.box5 {
+  grid-area: five;
+}
+
+.box6 {
+  grid-area: six;
+}
+
+.box7 {
+  grid-area: seven;
+}
+
+.box8 {
+  grid-area: eight;
+}
+
+.box9 {
+  grid-area: nine;
+}
+
+
+ul {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebf0f1;
+  color: #161616;
+  max-width: 100%;
+  min-height: 100%;
+  align-items: center;
+}
+
+li {
+  padding-bottom: 4px;
+}
+
+.aboutCompany {
+  flex-basis: 125px;
+  padding-left: 38px;
+}
+
+.contacts {
+  flex-basis: 73px;
+  padding-left: 38px;
+}
+
+.payment {
+  flex-basis: 70px;
+  padding-left: 38px;
+}
+
+.delivery {
+  flex-basis: 68px;
+  padding-left: 38px;
+}
+
+.organizations {
+  flex-basis: 105px;
+  padding-left: 38px;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'one'
+      'two'
+      'eight'
+      'seven'
+      'nine'
+      'three'
+      'four'
+      'five'
+      'six';
+  }
+}
