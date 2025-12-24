@@ -1,55 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 8 - Pixel Perfect</title>
+  <link rel="stylesheet" href="style1.css" class="style" />
 </head>
+
 <body>
+  <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 100;'>Style</button>
+  <img src='https://cdn.imgchest.com/files/pyvdcd2n9yk.png'
+    style='position: absolute; top:0; left:0; z-index:-1; opacity: 0.5;'>
 
-    <div id="header">
-        <h1>Lee Daria</h1>
+  <div class="container">
+    <div class="box1">
+      <ul>
+        <li>About company</li>
+        <li>Contacts</li>
+        <li>payment</li>
+        <li>Delivery</li>
+        <li>Organizations</li>
+        <li><span class="goods">Goods:<span class="red">+1,000,000</span></span></li>
+
+      </ul>
+
     </div>
+    <div class="box7">
+      <div class="top-right">
 
-    <div id="title">
-        <h2>Welcome to my page!</h2>
-        <p>"We suffer more often in imagination than in reality."</p>
-    </div>
-
-    <div id="about">
-        <img src="https://cdn.imgchest.com/files/c2e8ca017979.png" alt="My Image">
-        <div>
-            <h3>ABOUT</h3>
-            <p>My name is Daria. I am 19 y.o. I am currently taking the course "HTML and Web Page Design".</p>
+        <div class="auth">
+          <p>KGS</p>
+          <p>to come in</p>
+          <p>Register</p>
         </div>
+      </div>
     </div>
 
-    <h3>Favorites</h3>
-    <div id="fav">
-        <ol>
-            <li>Pasta</li>
-            <li>Sushi</li>
-            <li>Sweets</li>
-        </ol>
-
-        <ol>
-            <li>Asan</li>
-            <li>Baiel</li>
-            <li>Begimai</li>
-        </ol>
-
-        <ol>
-            <li>The Green Mile</li>
-            <li>Parasite</li>
-            <li>Titanic</li>
-        </ol>
+    <div class="box2"></div>
+    <div class="box8">
+      <div class="header-info">
+        <div class="addr">
+          <span class="red-link">st. Mederova 8/2 - map</span>
+          <span class="red-link">Schedule: Mon-Sat <span class="red">9-18</span> , Sun <span
+              class="red">9-18</span></span>
+        </div>
+        <div class="phone-col">
+          <div class="phone"><span>0 777 </span> <span class="strong">93 11 11</span></div>
+          <div class="phone"><span>0 553 </span> <span class="strong">93 11 11</span></div>
+        </div>
+        <div class="phone-col">
+          <div class="phone"><span>0 500</span> <span class="strong">93 11 11</span></div>
+          <div class="phone"><span>0 312</span> <span class="strong">98 67 60</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="box9">
+      <div class="header-links">
+        <p href="#" class="red-link">Where to pick up the</p>
+        <p href="#" class="red-link">goods?</p>
+        <p href="#" class="red-link">Favorites</p>
+      </div>
     </div>
 
-    <div id="wish">
-        <h3>Wishes</h3>
-        <p>I hope to live a fulfilling life.</p>
+    <div class="box3">
+      <div class="action-bar">
+        <div class="cat-btn">CATALOG</div>
+        <div class="search-wrap">
+          <span class="placeholder">product search</span>
+          <div class="search-end">
+            <div class="search-all">All</div>
+            <div class="search-btn">Search</div>
+          </div>
+        </div>
+        <div class="cart-box">
+          <div class="cart-icon"></div>
+          <div class="cart-info">
+            <p class="red2">Shopping cart Qty</p>
+            <p>: 0</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div class="box4"></div>
+
+    <div class="box5">
+      <div class="tab active">Latest Orders</div>
+      <div class="tab inactive">Items on sale</div>
+    </div>
+
+    <div class="box6">
+      <div class="product-slider">
+        <div class="card">
+          <div class="img-slot"></div>
+          <div class="title">Exercise bike DFC B504RWO magnetic</div>
+          <div class="price">27340s.</div>
+        </div>
+        <div class="card">
+          <div class="img-slot"></div>
+          <div class="title">Convector Ballu Ettore BEC/ETMR-1000, up to <p>15 m2</p>
+          </div>
+          <div class="price">4800s.</div>
+        </div>
+        <div class="card">
+          <div class="img-slot"></div>
+          <div class="title">Electric stove Gefest EP ND 6140-03</div>
+          <div class="price">$21,090</div>
+        </div>
+        <div class="card">
+          <div class="img-slot"></div>
+          <div class="title">Notebook Lenovo <p>IdeaPad L340-15API</p>
+            <p>ATHLON 300U 2.4- </p>
+          </div>
+          <div class="price">32,890s.</div>
+        </div>
+        <div class="card">
+          <div class="img-slot"></div>
+          <div class="title">Washing machine Samsung <p>WW60A4S00CE</p>
+          </div>
+          <div class="price">30,070s.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+    function switchStyle() {
+      let style = document.querySelector('.style');
+      let href = style.getAttribute('href');
+      style.setAttribute('href', href === 'style1.css' ? 'style2.css' : 'style1.css');
+    }
+  </script>
 </body>
+
 </html>
