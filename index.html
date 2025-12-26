@@ -7,15 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Final project</title>
   <link rel="stylesheet" href="style1.css" class="style" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 100;'>Style</button>
-  <img src='https://cdn.imgchest.com/files/pyvdcd2n9yk.png'
+  <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 100;'>Switch Style</button>
+  
+  <img src='https://cdn.imgchest.com/files/pyvdcd2n9yk.png' class="old-bg"
     style='position: absolute; top:0; left:0; z-index:-1; opacity: 0.5;'>
 
   <div class="container">
+    
     <div class="box1">
+      <button class="buttonMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
       <ul>
         <li>About company</li>
         <li>Contacts</li>
@@ -27,18 +35,30 @@
       </ul>
 
     </div>
-    <div class="box7">
-      <div class="top-right">
 
+    <div class="box7">
+      <div class="auth-new">
+          <div class="auth-item">KGS</div>
+          <div class="auth-item reg">Register</div>
+      </div>
+      <div class="top-right hide-in-style2">
         <div class="auth">
           <p>KGS</p>
-          <p>to come in</p>
+          <p>to come in</p> 
           <p>Register</p>
         </div>
       </div>
     </div>
 
-    <div class="box2"></div>
+    <div class="box2">
+      <img src="https://cdn.imgchest.com/files/a6e00f5fc10d.png" alt="max-kg">
+      
+      <div class="top-search">
+        <input type="text" placeholder="product search">
+        <button class="search-btn-new"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
     <div class="box8">
       <div class="header-info">
         <div class="addr">
@@ -56,16 +76,21 @@
         </div>
       </div>
     </div>
+
     <div class="box9">
       <div class="header-links">
-        <p href="#" class="red-link">Where to pick up the</p>
-        <p href="#" class="red-link">goods?</p>
-        <p href="#" class="red-link">Favorites</p>
+        <p href="#" class="red-link hide-in-style2">Where to pick up the</p>
+        <p href="#" class="red-link hide-in-style2">goods?</p>
+        <p href="#" class="red-link favorites-link"><i class="fa fa-heart"></i> Favorites</p>
       </div>
     </div>
 
     <div class="box3">
-      <div class="action-bar">
+      <div class="cat-content-new">
+        <h2>CATALOG</h2>
+      </div>
+
+      <div class="action-bar hide-in-style2">
         <div class="cat-btn">CATALOG</div>
         <div class="search-wrap">
           <span class="placeholder">product search</span>
@@ -75,7 +100,7 @@
           </div>
         </div>
         <div class="cart-box">
-          <div class="cart-icon"></div>
+          <div class="cart-icon"></div> 
           <div class="cart-info">
             <p class="red2">Shopping cart Qty</p>
             <p>: 0</p>
@@ -84,40 +109,71 @@
       </div>
     </div>
 
-    <div class="box4"></div>
+    <div class="box-cart-new">
+        <i class="fa fa-shopping-cart"></i>
+        <div class="cart-text">
+            <span>Shopping Cart</span>
+            <span class="qty">0 items</span>
+        </div>
+    </div>
+
+    <div class="box-sale">
+        <h3>SALE OFF <br> <span class="percent">20%</span></h3>
+    </div>
+
+    <div class="box4">
+      <div class="irrigators hide-in-style2">
+        <div class="">
+          <p>ИРРИГАТОРЫ</p>
+          <div class="brand">
+            <p>REVYLINE</p>
+            <div class="new">
+              <p>NEW</p>
+              <p>НОВИНКА</p>
+            </div>
+          </div>
+        </div>
+        <p class="buy">ПРИОБРЕСТИ</p>
+      </div>
+
+      <div class="hero-new">
+         <h1>IRRIGATORS</h1>
+         <button>BUY</button>
+      </div>
+    </div>
 
     <div class="box5">
       <div class="tab active">Latest Orders</div>
       <div class="tab inactive">Items on sale</div>
     </div>
-
+    
     <div class="box6">
       <div class="product-slider">
         <div class="card">
-          <div class="img-slot"></div>
+          <div class="img-slot"><img src="https://cdn.imgchest.com/files/33488c8a11e1.jpg" alt=""></div>
           <div class="title">Exercise bike DFC B504RWO magnetic</div>
           <div class="price">27340s.</div>
         </div>
         <div class="card">
-          <div class="img-slot"></div>
+          <div class="img-slot"><img src="https://cdn.imgchest.com/files/0c2578684295.jpg" alt=""></div>
           <div class="title">Convector Ballu Ettore BEC/ETMR-1000, up to <p>15 m2</p>
           </div>
           <div class="price">4800s.</div>
         </div>
         <div class="card">
-          <div class="img-slot"></div>
+          <div class="img-slot"><img src="https://cdn.imgchest.com/files/b2d32099838b.jpg" alt=""></div>
           <div class="title">Electric stove Gefest EP ND 6140-03</div>
           <div class="price">$21,090</div>
         </div>
         <div class="card">
-          <div class="img-slot"></div>
+          <div class="img-slot"><img src="https://cdn.imgchest.com/files/4812134e759b.jpg" alt=""></div>
           <div class="title">Notebook Lenovo <p>IdeaPad L340-15API</p>
             <p>ATHLON 300U 2.4- </p>
           </div>
           <div class="price">32,890s.</div>
         </div>
         <div class="card">
-          <div class="img-slot"></div>
+          <div class="img-slot"><img src="https://cdn.imgchest.com/files/91abc9db3217.jpg" alt=""></div>
           <div class="title">Washing machine Samsung <p>WW60A4S00CE</p>
           </div>
           <div class="price">30,070s.</div>
@@ -125,13 +181,24 @@
       </div>
     </div>
   </div>
-    <script>
+
+  <script>
     function switchStyle() {
       let style = document.querySelector('.style');
       let href = style.getAttribute('href');
       style.setAttribute('href', href === 'style1.css' ? 'style2.css' : 'style1.css');
     }
   </script>
+
+<script>
+    const btn = document.querySelector('.buttonMenu');
+    const menu = document.querySelector('.box1 ul'); 
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('show-mobile-menu');
+    });
+</script>
+
 </body>
 
 </html>
